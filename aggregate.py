@@ -1,5 +1,11 @@
 #!/usr/bin/python3
-
+"""
+Sensors aggregation and storage.
+https://github.com/dimitar-kunchev/NR-VentilationMonitoring
+@author: Dimitar Kunchev
+@license: See the LICENSE file
+@email: dimitar.kunchev@racecloud.net
+"""
 import pymysql
 import configparser
 import getopt
