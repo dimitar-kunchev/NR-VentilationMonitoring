@@ -1,18 +1,22 @@
 [db]
+; Database communication settings
 host=localhost
 db=cl_sensors
 user=cl_sensors
 pass=
 
 [sensors]
+; This section defines how many sensors are there to read and how to convert the read RPM value to airflow (multiplier).
 count=6
 rpm_to_airflow=[25,25,25,25,25,25]
 
 [uart]
+; Uart settings
 uart=/dev/ttyS0
 baudrate=9600
 
 [gpio]
+; This section defines the wiring. The address and enable pins are connected to the corresponding ones on the multiplexor IC
 address_0 = 4
 address_1 = 3
 address_2 = 17
