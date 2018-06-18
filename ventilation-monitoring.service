@@ -1,0 +1,14 @@
+[Unit]
+Description=Ventilation Monitoring
+After=network-online.target network.target
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/VentilationMonitoring/
+ExecStart=/home/pi/VentilationMonitoring/main.py
+Restart=always
+
+[Install]
+WantedBy=default.target

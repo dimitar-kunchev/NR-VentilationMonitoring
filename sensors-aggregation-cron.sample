@@ -1,0 +1,6 @@
+# m h dom mon dow user	command
+
+*/5  *  *  *   *   pi    cd /home/pi/VentilationMonitoring/ && ./aggregate.py --mode=5m
+0    *  *  *   *   pi    cd /home/pi/VentilationMonitoring/ && ./aggregate.py --mode=1h
+0    0  *  *   *   pi    cd /home/pi/VentilationMonitoring/ && ./aggregate.py --mode=1d
+5    0  *  *   *   pi    cd /home/pi/VentilationMonitoring/ && ./aggregate.py --mode=cleanup

@@ -1,0 +1,19 @@
+[db]
+host=localhost
+db=cl_sensors
+user=cl_sensors
+pass=
+
+[sensors]
+count=6
+rpm_to_airflow=[25,25,25,25,25,25]
+
+[uart]
+uart=/dev/ttyS0
+baudrate=9600
+
+[gpio]
+address_0 = 4
+address_1 = 3
+address_2 = 17
+enable = 18
